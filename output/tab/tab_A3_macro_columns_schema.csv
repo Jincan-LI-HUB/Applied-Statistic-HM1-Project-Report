@@ -1,0 +1,7 @@
+column,dtype,missing_n,missing_pct,nunique,example_or_top_levels
+cpi_change_country,float64,184,0.0696969696969697,44,1.1
+life_expectancy_country,float64,182,0.06893939393939394,54,82.5
+gross_tertiary_education_enrollment,float64,182,0.06893939393939394,63,65.6
+total_tax_rate_country,float64,182,0.06893939393939394,63,60.7
+gross_primary_education_enrollment_country,float64,181,0.06856060606060606,60,102.5
+gdp_country,object,164,0.06212121212121212,68,"$21,427,700,000,000  (754); $19,910,000,000,000  (523); $2,611,000,000,000  (157)"

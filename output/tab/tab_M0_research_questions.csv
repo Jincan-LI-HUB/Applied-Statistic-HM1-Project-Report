@@ -1,0 +1,6 @@
+rq_id,question,primary_module
+RQ0,RQ0: Does data quality (missingness/outliers/duplicates) systematically bias certain countries/industries and affect inference?,M2
+RQ1,"RQ1: Is finalWorth heavy-tailed, and how dominant is the top 1% for means/variance/correlation/regression?",M4
+RQ2,"RQ2: Do selfMade, gender, and category differ in finalWorth? What are the effect sizes and confidence intervals?",M6
+RQ3,"RQ3: Is finalWorth associated with macro variables (e.g., GDP), and is the association robust to log transforms and stratification?",M5/M6
+RQ4,"RQ4: How well does gdp_country predict finalWorth in a simple regression, and are results stable under log, multivariate controls, and robust SE?",M7

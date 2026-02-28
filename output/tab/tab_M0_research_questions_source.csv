@@ -1,0 +1,6 @@
+rq_id,question_source
+RQ0,RQ0: 数据质量（缺失/异常/重复）是否会系统性偏向某些国家/行业，从而影响推断？
+RQ1,RQ1: `finalWorth` 的分布是否重尾？top 1% 对整体统计量（均值/方差/相关/回归）的支配性有多强？
+RQ2,RQ2: `selfMade`、`gender`、`industry/category` 与 `finalWorth` 是否存在显著差异？差异的效应量与不确定性（CI）是多少？
+RQ3,RQ3: `finalWorth` 与国家宏观变量（如 `gdp_country` 等）是否相关？在 log 变换、分层（按 industry 等）后是否一致？
+RQ4,RQ4: 用 `gdp_country` 预测 `finalWorth` 的简单线性回归表现如何？在 log 版本、多元回归、稳健标准误、敏感性设定下结果是否稳定？

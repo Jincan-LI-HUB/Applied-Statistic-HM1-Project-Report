@@ -1,0 +1,5 @@
+step,column,note
+to_numeric,finalWorth,NA after coercion: 0 (was 0 under coercion check)
+to_numeric,age,NA after coercion: 65 (was 65 under coercion check)
+to_numeric,rank,NA after coercion: 0 (was 0 under coercion check)
+canonical_category,category_canonical,Set to category (industries retained as raw column)

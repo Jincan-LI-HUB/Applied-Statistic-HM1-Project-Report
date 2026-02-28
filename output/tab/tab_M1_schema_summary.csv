@@ -1,0 +1,36 @@
+column,dtype,missing_n,missing_pct,nunique,example_or_top_levels
+organization,object,2315,0.8768939393939394,294,Meta Platforms (4); Gap Inc. (3); Alphabet (2)
+title,object,2301,0.8715909090909091,97,Investor (44); Founder (34); CEO (29)
+residenceStateRegion,object,1893,0.7170454545454545,5,West (248); South (241); Northeast (190)
+state,object,1887,0.7147727272727272,45,California (178); New York (128); Florida (94)
+cpi_change_country,float64,184,0.0696969696969697,44,1.1
+cpi_country,float64,184,0.0696969696969697,63,110.05
+tax_revenue_country_country,float64,183,0.06931818181818182,57,24.2
+life_expectancy_country,float64,182,0.06893939393939394,54,82.5
+gross_tertiary_education_enrollment,float64,182,0.06893939393939394,63,65.6
+total_tax_rate_country,float64,182,0.06893939393939394,63,60.7
+gross_primary_education_enrollment_country,float64,181,0.06856060606060606,60,102.5
+gdp_country,object,164,0.06212121212121212,68,"$21,427,700,000,000  (754); $19,910,000,000,000  (523); $2,611,000,000,000  (157)"
+population_country,float64,164,0.06212121212121212,68,67059887.0
+latitude_country,float64,164,0.06212121212121212,68,46.227638
+longitude_country,float64,164,0.06212121212121212,68,2.213749
+birthMonth,float64,76,0.02878787878787879,12,3.0
+birthDay,float64,76,0.02878787878787879,31,5.0
+birthYear,float64,76,0.02878787878787879,77,1949.0
+birthDate,object,76,0.02878787878787879,2060,1/1/1965 0:00 (19); 1/1/1962 0:00 (16); 1/1/1966 0:00 (15)
+city,object,72,0.02727272727272727,741,New York (99); Beijing (68); Hong Kong (68)
+age,float64,65,0.02462121212121212,79,74.0
+country,object,38,0.014393939393939395,78,United States (754); China (523); India (157)
+firstName,object,3,0.0011363636363636363,1770,John (40); David (36); Michael (28)
+selfMade,bool,0,0.0,2,False
+gender,object,0,0.0,2,M (2303); F (337)
+date,object,0,0.0,2,4/4/2023 5:01 (2638); 4/4/2023 9:01 (2)
+status,object,0,0.0,6,D (1223); U (855); E (268)
+category,object,0,0.0,18,Finance & Investments (372); Manufacturing (324); Technology (314)
+industries,object,0,0.0,18,Finance & Investments (372); Manufacturing (324); Technology (314)
+countryOfCitizenship,object,0,0.0,77,United States (735); China (491); India (169)
+rank,int64,0,0.0,219,1
+finalWorth,int64,0,0.0,219,211000
+source,object,0,0.0,906,Real estate (151); Investments (92); Diversified (91)
+lastName,object,0,0.0,1736,Li (44); Wang (40); Chen (35)
+personName,object,0,0.0,2638,Li Li (2); Wang Yanqing & family (2); Zhong Shanshan (1)

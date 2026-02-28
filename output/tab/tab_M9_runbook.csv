@@ -1,0 +1,6 @@
+step,action
+1,Place the raw CSV at ./data/raw/Billionaires Statistics Dataset.csv
+2,Open ./code/project_stastistic_analyse_and_visualization.ipynb
+3,Kernel → Restart & Run All
+4,Verify outputs in ./output/fig and ./output/tab
+5,Use tab_M9_report_map to reference figures/tables in the report

@@ -1,0 +1,2 @@
+scale,welch_t_stat,p_value,cohens_d,mean_diff_bootstrap_CI_95%
+log1p(finalWorth),-0.9506824379484387,0.34232617586224334,-0.0560801361395599,"[-0.1431, 0.0489]"

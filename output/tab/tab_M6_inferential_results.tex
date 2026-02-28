@@ -1,0 +1,13 @@
+\begin{tabular}{llrrrrr}
+\toprule
+family & analysis & n & effect & ci\_low & ci\_high & p\_value \\
+\midrule
+Correlation & Pearson r (logWorth, logGDP) & 2476 & 0.045759 & 0.007066 & 0.082935 & 0.022786 \\
+Correlation & Spearman $\rho$ (logWorth, logGDP) & 2476 & 0.096573 & 0.057546 & 0.136319 & 0.000001 \\
+Two-group & Welch t-test: selfMade vs not (logWorth) & 2640 & -0.097502 & -0.168643 & -0.031732 & 0.004980 \\
+Two-group & Cohen's d: selfMade vs not (logWorth) & 2640 & -0.118971 & -0.201232 & -0.034527 & 0.004980 \\
+Two-group & Cliff's delta: selfMade vs not (logWorth) & 2640 & -0.079194 & -0.124112 & -0.031179 & 0.001072 \\
+Robustness & Permutation p-value (mean diff, logWorth) & 2640 & NaN & NaN & NaN & 0.004998 \\
+Multi-group & Kruskal-Wallis: logWorth across category & 2640 & 0.008831 & NaN & NaN & 0.001030 \\
+\bottomrule
+\end{tabular}

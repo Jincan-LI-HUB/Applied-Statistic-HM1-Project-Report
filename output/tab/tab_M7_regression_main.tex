@@ -1,0 +1,22 @@
+\begin{tabular}{llrrrrrrrr}
+\toprule
+model & term & coef & se\_hc3 & t & p & ci\_low & ci\_high & n & r2 \\
+\midrule
+A: finalWorth \textasciitilde \space gdp\_country\_num (HC3) & const & 4237.583714 & 281.536968 & 15.051607 & 0.000000 & 3685.511306 & 4789.656122 & 2476 & 0.001413 \\
+A: finalWorth \textasciitilde \space gdp\_country\_num (HC3) & gdp\_country\_num & 0.000000 & 0.000000 & 1.873986 & 0.061050 & -0.000000 & 0.000000 & 2476 & 0.001413 \\
+B: log\_finalWorth \textasciitilde \space log\_gdp (HC3) & const & 7.266857 & 0.283538 & 25.629224 & 0.000000 & 6.710861 & 7.822853 & 2476 & 0.002094 \\
+B: log\_finalWorth \textasciitilde \space log\_gdp (HC3) & log\_gdp & 0.022871 & 0.009707 & 2.356078 & 0.018547 & 0.003836 & 0.041906 & 2476 & 0.002094 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & Intercept & 6.387722 & 0.350104 & 18.245205 & 0.000000 & 5.701089 & 7.074355 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Fashion \& Retail] & 0.157747 & 0.086165 & 1.830751 & 0.067296 & -0.011242 & 0.326736 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Finance \& Investments] & 0.118336 & 0.077501 & 1.526885 & 0.126958 & -0.033662 & 0.270333 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Food \& Beverage] & 0.076832 & 0.089285 & 0.860524 & 0.389610 & -0.098276 & 0.251940 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Healthcare] & -0.096619 & 0.081598 & -1.184085 & 0.236529 & -0.256652 & 0.063413 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Manufacturing] & -0.097177 & 0.077834 & -1.248527 & 0.211993 & -0.249826 & 0.055472 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Real Estate] & -0.085950 & 0.080119 & -1.072780 & 0.283507 & -0.243081 & 0.071181 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & C(category)[T.Technology] & 0.207634 & 0.086833 & 2.391176 & 0.016892 & 0.037334 & 0.377933 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & log\_gdp & 0.035423 & 0.011781 & 3.006664 & 0.002676 & 0.012317 & 0.058529 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & age & 0.009192 & 0.001517 & 6.059496 & 0.000000 & 0.006217 & 0.012167 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & selfMade\_bin & -0.192678 & 0.044844 & -4.296675 & 0.000018 & -0.280627 & -0.104730 & 1895 & 0.048394 \\
+C: log\_finalWorth \textasciitilde \space log\_gdp + controls + C(category) (HC3) & gender\_F & -0.040499 & 0.059107 & -0.685179 & 0.493315 & -0.156422 & 0.075424 & 1895 & 0.048394 \\
+\bottomrule
+\end{tabular}
