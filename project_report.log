@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.5)  28 FEB 2026 15:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.5)  28 FEB 2026 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1505,12 +1505,8 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 216.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 218.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 220.
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 226.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 236.
+(Font)              scaled to size 9.0pt on input line 239.
  (./output/tab/tab_M0_research_questions.tex
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
 (Font)              scaled to size 9.0pt on input line 2.
@@ -1561,6 +1557,10 @@ LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 LaTeX Font Info:    Font shape `LMX/ntxexx/b/n' will be
 (Font)              scaled to size 5.5pt on input line 2.
 )
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 245.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 247.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
 (Font)              scaled to size 10.0pt on input line 251.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
@@ -1626,91 +1626,96 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ntxtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<output/fig/fig_M2_us_only_state_coverage.pdf, id=83, 551.94518pt x 320.13853pt>
+<output/fig/fig_M2_us_only_state_coverage.pdf, id=79, 551.94518pt x 320.13853pt>
 File: output/fig/fig_M2_us_only_state_coverage.pdf Graphic file (type pdf)
 <use output/fig/fig_M2_us_only_state_coverage.pdf>
 Package pdftex.def Info: output/fig/fig_M2_us_only_state_coverage.pdf  used on input line 260.
 (pdftex.def)             Requested size: 414.51343pt x 240.42572pt.
-<output/fig/fig_M2_missingness_top15.pdf, id=86, 614.78645pt x 363.09903pt>
+<output/fig/fig_M2_missingness_top15.pdf, id=82, 614.78645pt x 363.09903pt>
 File: output/fig/fig_M2_missingness_top15.pdf Graphic file (type pdf)
 <use output/fig/fig_M2_missingness_top15.pdf>
 Package pdftex.def Info: output/fig/fig_M2_missingness_top15.pdf  used on input line 270.
 (pdftex.def)             Requested size: 405.09071pt x 239.24718pt.
-<output/fig/fig_M2_missingness_heatmap_country_top12.pdf, id=87, 701.86919pt x 348.98067pt>
+<output/fig/fig_M2_missingness_heatmap_country_top12.pdf, id=83, 701.86919pt x 348.98067pt>
 File: output/fig/fig_M2_missingness_heatmap_country_top12.pdf Graphic file (type pdf)
 <use output/fig/fig_M2_missingness_heatmap_country_top12.pdf>
 Package pdftex.def Info: output/fig/fig_M2_missingness_heatmap_country_top12.pdf  used on input line 277.
 (pdftex.def)             Requested size: 433.35168pt x 215.47649pt.
  [2{c:/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./output/fig/fig_M2_us_only_state_coverage.pdf> <./output/fig/fig_M2_missingness_top15.pdf>]
-<output/fig/fig_M2_outliers_raw_vs_log_box.pdf, id=188, 855.67677pt x 319.73705pt>
+<output/fig/fig_M2_outliers_raw_vs_log_box.pdf, id=184, 855.67677pt x 319.73705pt>
 File: output/fig/fig_M2_outliers_raw_vs_log_box.pdf Graphic file (type pdf)
 <use output/fig/fig_M2_outliers_raw_vs_log_box.pdf>
 Package pdftex.def Info: output/fig/fig_M2_outliers_raw_vs_log_box.pdf  used on input line 293.
 (pdftex.def)             Requested size: 395.66798pt x 147.84679pt.
-<output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf, id=191, 855.15923pt x 333.98143pt>
+
+
+LaTeX Warning: Reference `tab:tab_M3_clean_dataset_manifest' on page 3 undefined on input line 303.
+
+[3 <./output/fig/fig_M2_missingness_heatmap_country_top12.pdf> <./output/fig/fig_M2_outliers_raw_vs_log_box.pdf>]
+<output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf, id=280, 855.15923pt x 333.98143pt>
 File: output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf Graphic file (type pdf)
 <use output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf>
-Package pdftex.def Info: output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf  used on input line 307.
+Package pdftex.def Info: output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf  used on input line 313.
 (pdftex.def)             Requested size: 423.92897pt x 165.56337pt.
- [3 <./output/fig/fig_M2_missingness_heatmap_country_top12.pdf> <./output/fig/fig_M2_outliers_raw_vs_log_box.pdf>] (./output/tab/tab_M4_finalWorth_describe.tex)
-<output/fig/fig_M4_finalWorth_ccdf_loglog.pdf, id=291, 537.52957pt x 348.43546pt>
+ (./output/tab/tab_M4_finalWorth_describe.tex)
+<output/fig/fig_M4_finalWorth_ccdf_loglog.pdf, id=284, 537.52957pt x 348.43546pt>
 File: output/fig/fig_M4_finalWorth_ccdf_loglog.pdf Graphic file (type pdf)
 <use output/fig/fig_M4_finalWorth_ccdf_loglog.pdf>
-Package pdftex.def Info: output/fig/fig_M4_finalWorth_ccdf_loglog.pdf  used on input line 327.
+Package pdftex.def Info: output/fig/fig_M4_finalWorth_ccdf_loglog.pdf  used on input line 333.
 (pdftex.def)             Requested size: 414.51343pt x 268.7055pt.
  [4 <./output/fig/fig_M4_finalWorth_distribution_raw_and_log.pdf>]
-<output/fig/fig_M4_top1pct_wealth_share.pdf, id=339, 479.39287pt x 320.01308pt>
+<output/fig/fig_M4_top1pct_wealth_share.pdf, id=335, 479.39287pt x 320.01308pt>
 File: output/fig/fig_M4_top1pct_wealth_share.pdf Graphic file (type pdf)
 <use output/fig/fig_M4_top1pct_wealth_share.pdf>
-Package pdftex.def Info: output/fig/fig_M4_top1pct_wealth_share.pdf  used on input line 334.
+Package pdftex.def Info: output/fig/fig_M4_top1pct_wealth_share.pdf  used on input line 340.
 (pdftex.def)             Requested size: 367.40701pt x 245.2633pt.
  (./output/tab/tab_M4_top1pct_wealth_share.tex)
-<output/fig/fig_M4_top10_country_count.pdf, id=342, 652.97264pt x 348.25294pt>
+<output/fig/fig_M4_top10_country_count.pdf, id=338, 652.97264pt x 348.25294pt>
 File: output/fig/fig_M4_top10_country_count.pdf Graphic file (type pdf)
 <use output/fig/fig_M4_top10_country_count.pdf>
-Package pdftex.def Info: output/fig/fig_M4_top10_country_count.pdf  used on input line 354.
+Package pdftex.def Info: output/fig/fig_M4_top10_country_count.pdf  used on input line 360.
 (pdftex.def)             Requested size: 386.25246pt x 205.99884pt.
  [5 <./output/fig/fig_M4_finalWorth_ccdf_loglog.pdf> <./output/fig/fig_M4_top1pct_wealth_share.pdf>]
-<output/fig/fig_M4_top10_category_count.pdf, id=426, 653.13573pt x 348.25294pt>
+<output/fig/fig_M4_top10_category_count.pdf, id=422, 653.13573pt x 348.25294pt>
 File: output/fig/fig_M4_top10_category_count.pdf Graphic file (type pdf)
 <use output/fig/fig_M4_top10_category_count.pdf>
-Package pdftex.def Info: output/fig/fig_M4_top10_category_count.pdf  used on input line 361.
+Package pdftex.def Info: output/fig/fig_M4_top10_category_count.pdf  used on input line 367.
 (pdftex.def)             Requested size: 386.25246pt x 205.95102pt.
  (./output/tab/tab_M6_inferential_results.tex) [6 <./output/fig/fig_M4_top10_country_count.pdf> <./output/fig/fig_M4_top10_category_count.pdf>]
-<output/fig/fig_M6_effectsize_forest.pdf, id=521, 667.39523pt x 213.02211pt>
+<output/fig/fig_M6_effectsize_forest.pdf, id=517, 667.39523pt x 213.02211pt>
 File: output/fig/fig_M6_effectsize_forest.pdf Graphic file (type pdf)
 <use output/fig/fig_M6_effectsize_forest.pdf>
-Package pdftex.def Info: output/fig/fig_M6_effectsize_forest.pdf  used on input line 404.
+Package pdftex.def Info: output/fig/fig_M6_effectsize_forest.pdf  used on input line 410.
 (pdftex.def)             Requested size: 433.35168pt x 138.3197pt.
  (./output/tab/tab_M7_regression_main.tex)
-Overfull \hbox (316.77356pt too wide) in paragraph at lines 1--431
+Overfull \hbox (316.77356pt too wide) in paragraph at lines 1--437
  [][] 
  []
 
 [7 <./output/fig/fig_M6_effectsize_forest.pdf>]
-<output/fig/fig_M7_regression_fit_loglog.pdf, id=600, 508.59573pt x 362.97356pt>
+<output/fig/fig_M7_regression_fit_loglog.pdf, id=596, 508.59573pt x 362.97356pt>
 File: output/fig/fig_M7_regression_fit_loglog.pdf Graphic file (type pdf)
 <use output/fig/fig_M7_regression_fit_loglog.pdf>
-Package pdftex.def Info: output/fig/fig_M7_regression_fit_loglog.pdf  used on input line 435.
+Package pdftex.def Info: output/fig/fig_M7_regression_fit_loglog.pdf  used on input line 441.
 (pdftex.def)             Requested size: 405.09071pt x 289.09982pt.
-<output/fig/fig_M7_regression_diagnostics.pdf, id=601, 797.3903pt x 319.47043pt>
+<output/fig/fig_M7_regression_diagnostics.pdf, id=597, 797.3903pt x 319.47043pt>
 File: output/fig/fig_M7_regression_diagnostics.pdf Graphic file (type pdf)
 <use output/fig/fig_M7_regression_diagnostics.pdf>
-Package pdftex.def Info: output/fig/fig_M7_regression_diagnostics.pdf  used on input line 442.
+Package pdftex.def Info: output/fig/fig_M7_regression_diagnostics.pdf  used on input line 448.
 (pdftex.def)             Requested size: 433.35168pt x 173.62288pt.
  [8 <./output/fig/fig_M7_regression_fit_loglog.pdf>] (./output/tab/tab_M7_bp_test_modelB.tex) (./output/tab/tab_M7_robust_drop_top1pct_logmodel.tex)
-<output/fig/fig_M7_robust_coef_compare_top1pct.pdf, id=653, 610.39499pt x 334.19104pt>
+<output/fig/fig_M7_robust_coef_compare_top1pct.pdf, id=649, 610.39499pt x 334.19104pt>
 File: output/fig/fig_M7_robust_coef_compare_top1pct.pdf Graphic file (type pdf)
 <use output/fig/fig_M7_robust_coef_compare_top1pct.pdf>
-Package pdftex.def Info: output/fig/fig_M7_robust_coef_compare_top1pct.pdf  used on input line 470.
+Package pdftex.def Info: output/fig/fig_M7_robust_coef_compare_top1pct.pdf  used on input line 476.
 (pdftex.def)             Requested size: 414.51343pt x 226.95113pt.
  [9 <./output/fig/fig_M7_regression_diagnostics.pdf> <./output/fig/fig_M7_robust_coef_compare_top1pct.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 510.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 516.
  (c:/texlive/2025/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 510.
+(Font)              scaled to size 10.0pt on input line 516.
  (./output/tab/tab_M0_environment_snapshot.tex) (./output/tab/tab_M9_runbook.tex
 LaTeX Info: Symbol \textrightarrow not provided by
             font family ntxtlf in TS1 encoding.
@@ -1718,14 +1723,6 @@ LaTeX Info: Symbol \textrightarrow not provided by
  (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )) [10{c:/texlive/2025/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 545.
- (./output/tab/tab_M9_report_map.tex)
-Overfull \hbox (1091.94777pt too wide) in paragraph at lines 1--547
- [][] 
- []
-
-
 Overfull \hbox (79.10078pt too wide) in paragraph at lines 550--552
 [] []\T1/ntxtlf/b/n/10 (-20) Note-book ap-pended.[] \T1/ntxtlf/m/n/10 (-20) The full anal-y-sis note-book is in-cluded as \T1/ntxtt/m/n/10 ./code/project_stastistic_analyse_and_visualization.ipynb\T1/ntxtlf/m/n/10 (-20) .
  []
@@ -1735,22 +1732,26 @@ Overfull \hbox (79.10078pt too wide) in paragraph at lines 550--552
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `project_report.out' has not changed.
-(rerunfilecheck)             Checksum: 0C2A21ECC53EC27E4DEC2D7CCD111CD9;3708.
+(rerunfilecheck)             Checksum: 7D6E0FD3B1ACFD24B4560ABDDC30D0BB;3537.
  ) 
 Here is how much of TeX's memory you used:
- 53128 strings out of 469461
- 1195960 string characters out of 5468710
- 1831255 words of memory out of 5000000
- 80770 multiletter control sequences out of 15000+600000
- 724867 words of font info for 230 fonts, out of 8000000 for 9000
+ 53123 strings out of 469461
+ 1195813 string characters out of 5468710
+ 1794223 words of memory out of 5000000
+ 80764 multiletter control sequences out of 15000+600000
+ 722272 words of font info for 232 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 84i,11n,117p,1347b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,117p,1116b,1119s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txexs.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on project_report.pdf (11 pages, 439658 bytes).
+Output written on project_report.pdf (11 pages, 438664 bytes).
 PDF statistics:
- 861 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 35534 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 856 PDF objects out of 1000 (max. 8388607)
+ 290 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 33478 words of extra memory for PDF output out of 35830 (max. 10000000)
 

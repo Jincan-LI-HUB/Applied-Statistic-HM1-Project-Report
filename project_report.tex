@@ -217,13 +217,16 @@
 
 This project studies the dataset of billionaires with the goal of answering a simple question carefully: \emph{what patterns in billionaire wealth are stable enough to report, and what patterns are likely artifacts of data collection?}
 We start with a data audit (schema freeze and missingness structure) before moving to descriptive statistics (heavy tails and concentration), inferential comparisons (effect sizes with confidence intervals), and regression models linking billionaire wealth to country-level GDP.
-Throughout, we emphasize \textbf{interpretability and robustness}: results are reported on a log scale when appropriate, effect sizes are paired with 95\% confidence intervals, and key conclusions are challenged with at least one robustness check.
+Throughout, we emphasize interpretability and robustness: results are reported on a log scale when appropriate, effect sizes are paired with 95\% confidence intervals, and key conclusions are challenged with at least one robustness check.
 
 Billionaire wealth sits at the far end of the economic distribution, where ``typical'' statistical intuition often fails: the distribution is extremely skewed, a small number of observations can dominate averages, and missingness can be structural rather than random.
 Because of this, our report is written as a story with guardrails.
 We begin by asking whether the dataset is \emph{fit for inference} (data quality and coverage), then we describe what the distribution looks like, and only then do we test hypotheses and fit regression models.
 
-\subsection{Research Questions}
+We find that billionaire wealth is extremely right-skewed, even after restricting the sample to ultra-high-net-worth individuals. 
+On the log scale, wealth is positively associated with country-level GDP, though the relationship explains only part of the variation and remains strictly non-causal. 
+Group comparisons suggest statistically detectable but practically modest differences between self-made and non–self-made individuals. 
+Importantly, these qualitative conclusions remain stable under alternative specifications and after excluding the most extreme observations.
 
 Our research questions (RQs) are summarized in Table~\ref{tab:rq}. 
 Given the complexity and practical significance of the given dataset, 
@@ -237,20 +240,17 @@ we plan to propose research questions that progress from the dataset itself to t
 \input{output/tab/tab_M0_research_questions.tex}
 \end{table}
 
-\subsection{Brief inspections}
-In statistical analysis, we employed the the folloeing techniques:
-
 \section{Statistical Analysis}
 
 \subsection{Data Processing and Data Quality Audit}\label{sec:data}
 
 \paragraph{Schema freeze and reproducibility.}
-We treat the raw CSV as immutable input and record a ``schema freeze'' (column set, read rules, and file fingerprint). This prevents analysis drift and ensures that future reruns of the notebook reproduce the same artifacts.
+We treat the raw CSV as initial input and record a ``schema freeze'' (column set, read rules, and file fingerprint). This prevents analysis drift and ensures that future reruns of the notebook reproduce the same artifacts.
 
 \paragraph{Missingness is part of the signal.}
 We define the missingness rate of a variable $X$ as
 \[
-\mathrm{MissingRate}(X)=\frac{\#\{i:\,X_i \text{ is NA}\}}{n}.
+\mathrm{MissingRate}(X)=\frac{\#\{i:\,X_i \text{ is empty}\}}{n}.
 \]
 In this dataset, some missingness reflects \emph{structural coverage} rather than measurement error.
 For example, Figure~\ref{fig:usstate} shows that \texttt{state} and \texttt{residenceStateRegion} are populated only for U.S.\ records. This matters: if we naively compare missingness across countries without this context, we could misinterpret missingness as an economic pattern.
@@ -295,6 +295,12 @@ Figure~\ref{fig:outlierlog} illustrates why this matters by contrasting raw-scal
 \label{fig:outlierlog}
 \end{figure}
 
+\subsection{Data Cleaning}
+We start from the original dataset of 2,640 billionaires with 35 variables and enrich it through feature engineering without removing any observations. 
+Six new variables are added: standardized industry category (\texttt{category\_canonical}), binary indicators for U.S. residency (\texttt{is\_us}) and self-made status (\texttt{selfMade\_bool}), 
+country-level GDP (\texttt{gdp\_country\_num}), and their log-transformed counterparts (\texttt{log\_finalWorth}, \texttt{log\_gdp}). The final cleaned dataset thus contains 41 columns while preserving all 2,640 records.
+
+Following preprocessing and feature engineering, the cleaned dataset \texttt{billionaires\_clean.csv} was saved to \texttt{data/clean/} for reproducibility, preserving all 2,640 original records while expanding the feature set from 35 to 41 variables. The additional columns include standardized categorical labels (\texttt{category\_canonical}), binary flags (\texttt{is\_us}, \texttt{selfMade\_bool}), country-level GDP (\texttt{gdp\_country\_num}), and log-transformed wealth and economic indicators (\texttt{log\_finalWorth}, \texttt{log\_gdp}). Dataset metadata (file path, dimensions) were recorded in manifest table~\ref{tab:tab_M3_clean_dataset_manifest}.
 \subsection{Descriptive Statistics}\label{sec:desc}
 
 \paragraph{A distribution you should not summarize with ``the average''.}
@@ -538,13 +544,7 @@ Table~\ref{tab:infer} reports the full set of effect sizes with bootstrap CIs, w
 \input{output/tab/tab_M9_runbook.tex}
 \end{table}
 
-\begin{table}[H]
-\centering
-\caption{Report map: where each figure/table is used.}
-\label{tab:reportmap}
-\scriptsize
-\input{output/tab/tab_M9_report_map.tex}
-\end{table}
+Please refer to the \href{https://github.com/Jincan-LI-HUB/Applied-Statistic-HM1-Project-Report.git}{online hub} for the full file map.
 
 \paragraph{Notebook appended.}
 The full analysis notebook is included as \texttt{./code/project\_stastistic\_analyse\_and\_visualization.ipynb}.
