@@ -1,0 +1,16 @@
+column,missing_pct,missing_n,dtype
+organization,87.69,2315,str
+title,87.16,2301,str
+residenceStateRegion,71.7,1893,str
+state,71.48,1887,str
+cpi_change_country,6.97,184,float64
+cpi_country,6.97,184,float64
+tax_revenue_country_country,6.93,183,float64
+life_expectancy_country,6.89,182,float64
+gross_tertiary_education_enrollment,6.89,182,float64
+total_tax_rate_country,6.89,182,float64
+gross_primary_education_enrollment_country,6.86,181,float64
+gdp_country,6.21,164,str
+population_country,6.21,164,float64
+latitude_country,6.21,164,float64
+longitude_country,6.21,164,float64

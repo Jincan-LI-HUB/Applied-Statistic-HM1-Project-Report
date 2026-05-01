@@ -1,0 +1,10 @@
+\begin{tabular}{lll}
+\toprule
+audit\_item & result & interpretation \\
+\midrule
+personName duplicated rows & 4 & personName is display text, not a stable primary key. \\
+(rank, country, personName) duplicate rows & 0 & 0 means usable as a snapshot-level surrogate key only. \\
+category equals industries exactly & True & Use category as canonical; keep industries only as raw-source evidence. \\
+unique date values & 2 & date is snapshot metadata, not a substantive time series. \\
+\bottomrule
+\end{tabular}

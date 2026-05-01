@@ -1,0 +1,9 @@
+earlier_thread,present_location,treatment,evidence
+RQ0 exploratory checks,M0-M2 plus exploratory reasoning checks,Retained and formalized,"schema freeze, identity checks, missingness architecture"
+RQ1 finalWorth distribution,M4 and report wealth distribution section,Strengthened statistically,"CCDF, top-1 percent, Gini, BCa bootstrap"
+RQ2 age structure,M5/M7 and regression diagnostics,Partly retained with tighter limits,LOWESS age trajectory and age controls
+RQ3 category/industry,M4/M6/M7,Retained and strengthened,"category alias audit, pairwise tests, Model C controls"
+RQ4 selfMade/status/gender,M5/M6/M8,Retained with effect-size framing,"Cohen d, Cliff delta, permutation p, robustness matrix"
+RQ5 geography US China,M5 geography drill-down and report geography paragraph,Included selectively,"country concentration, US state/region, China city profiles"
+RQ6 macro scale/development/institution,M1/M5/M7,Retained as interpretation boundary,"variable reasoning matrix, macro schema, VIF, regression"
+RQ7 regression/prediction,M7,Strengthened substantially,"HC3, nested F-test, CV, quantile regression"

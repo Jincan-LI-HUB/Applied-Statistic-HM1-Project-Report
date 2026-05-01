@@ -1,0 +1,5 @@
+issue,metric,value,note
+Exact duplicate rows,count,0,informational; handling decided in M3
+"Age outside [0, 120]",count,0,sanity check
+Rank <= 0,count,0,sanity check
+GDP parse failures,count,0,requires cleaning rule or exclusion in regression

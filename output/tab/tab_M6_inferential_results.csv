@@ -1,0 +1,11 @@
+family,analysis,n,effect,ci_low,ci_high,p_value
+Correlation,"Pearson r (logWorth, logGDP)",2476,0.0457593123311342,0.0070661377528704,0.0829346069162588,0.0227862348214271
+Correlation,"Spearman rho (logWorth, logGDP)",2476,0.0965726820187624,0.0575461506410066,0.1363185418929811,1.4776854633259516e-06
+Two-group,Welch t-test: selfMade vs not (logWorth),2640,-0.0975021692570479,-0.168643072975159,-0.0317317282052256,0.0049797176247209
+Two-group,Cohen's d: selfMade vs not (logWorth),2640,-0.1189710612760027,-0.2012316679772081,-0.0345267142751114,0.0049797176247209
+Two-group,Cliff's delta: selfMade vs not (logWorth),2640,-0.0791942604856512,-0.1241119989122436,-0.0311789659116358,0.0010724527226775
+Robustness,"Permutation p-value (mean diff, logWorth)",2640,,,,0.0049975012493753
+Multi-group,Kruskal-Wallis epsilon-squared: logWorth across category,2615,0.0089157073957739,,,0.001030212170411
+Two-group,Welch t-test: Female vs Male (logWorth),2640,,,,0.5806082845058391
+Two-group,Cohen's d: Female vs Male (logWorth),2640,-0.03267923169503389,,,0.5806082845058391
+Two-group,Mann-Whitney U: Female vs Male (logWorth),2640,,,,0.645585172008325

@@ -1,0 +1,16 @@
+role,column,in_dataset
+Y,finalWorth,True
+X,gdp_country,True
+G,country,True
+G,category,True
+G,selfMade,True
+G,gender,True
+C,age,True
+C,rank,True
+C,cpi_country,True
+C,life_expectancy_country,True
+C,total_tax_rate_country,True
+C,gross_tertiary_education_enrollment,True
+ID,personName,True
+ID,source,True
+ID,industries,True

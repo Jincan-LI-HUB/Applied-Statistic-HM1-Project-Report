@@ -1,0 +1,18 @@
+\begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}p{1.8cm}Y r >{\raggedright\arraybackslash}p{4.0cm}>{\raggedright\arraybackslash}p{1.45cm}Y}
+\toprule
+Domain & Estimand / test & n & Effect (95\% CI) & $p$ & Reading \\
+\midrule
+GDP link & Pearson $r$: log-wealth vs. log-GDP & 2476 & $0.0458$ [$0.0071$, $0.0829$] & $0.022786$ & Detectable but practically tiny linear association. \\
+GDP link & Spearman $\rho$: log-wealth vs. log-GDP & 2476 & $0.0966$ [$0.0575$, $0.1363$] & $0.000001$* & Small rank association; stronger than Pearson but still weak. \\
+Self-made & Welch mean contrast: self-made vs. inherited & 2640 & $-0.0975$ [$-0.1686$, $-0.0317$] & $0.004980$* & Statistically detectable; effect remains substantively small. \\
+Self-made & Cohen's $d$: self-made vs. inherited & 2640 & $-0.1190$ [$-0.2012$, $-0.0345$] & $0.004980$* & Statistically detectable; effect remains substantively small. \\
+Self-made & Cliff's $\delta$: self-made vs. inherited & 2640 & $-0.0792$ [$-0.1241$, $-0.0312$] & $0.001072$* & Statistically detectable; effect remains substantively small. \\
+Robustness & Permutation test: self-made mean contrast & 2640 & --- & $0.004998$* & Self-made contrast is not dependent on normality. \\
+Industry & Kruskal--Wallis $\epsilon^2$: industry categories & 2615 & $0.0089$ & $0.001030$* & Industry differences exist, but the omnibus effect is small. \\
+Gender & Welch mean contrast: female vs. male & 2640 & --- & $0.580608$ & No statistically clear gender wealth difference in this sample. \\
+Gender & Cohen's $d$: female vs. male & 2640 & $-0.0327$ & $0.580608$ & No statistically clear gender wealth difference in this sample. \\
+Gender & Mann--Whitney $U$: female vs. male & 2640 & --- & $0.645585$ & No statistically clear gender wealth difference in this sample. \\
+\bottomrule
+\end{tabularx}
+\vspace{2pt}
+\footnotesize\textit{$* =$ Holm-Bonferroni significant at $\alpha=0.05$. Effects are reported on log-wealth unless noted. Gender rows use Male $n=2303$, Female $n=337$; female mean log-wealth $7.954$ and male mean $7.927$.}

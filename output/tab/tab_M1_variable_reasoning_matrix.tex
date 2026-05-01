@@ -1,0 +1,14 @@
+\begin{tabular}{llll}
+\toprule
+block & variables & decision & reason \\
+\midrule
+Core outcome & finalWorth, rank & Use finalWorth; keep rank as descriptive metadata & finalWorth is the target wealth measure; rank is ordinal and can tie, so it is not the main response. \\
+Time / life-cycle & age, birthYear, birthMonth, birthDay, birthDate, date & Use age; treat date as snapshot metadata; avoid month/day in main models & Age has substantive life-cycle meaning; date is not a panel; birth month/day add little statistical value. \\
+Geography & country, city, state, residenceStateRegion, countryOfCitizenship, latitude\_country, longitude\_country & Use country for clustering/strata; interpret state/residenceStateRegion as US-structured; avoid causal citizenship claims & country is central but countryOfCitizenship changes the estimand; state fields are structurally available mainly for US records. \\
+Business category & category, industries, source, organization, title & Use category as canonical; keep source descriptive; avoid organization/title in main inference & category and industries are duplicate labels; organization/title have very high missingness and unstable semantics. \\
+Identity / social labels & selfMade, status, gender, personName, firstName, lastName & Use selfMade and gender cautiously; treat status as descriptive unless codebook is verified; names are identifiers only & selfMade/gender support group comparisons; status labels lack a trusted external coding manual. \\
+Scale macro variables & gdp\_country, population\_country & Derive log\_gdp and log\_pop; avoid interpreting GDP as development without population controls & GDP mixes economic scale with population; models need scale/development separation. \\
+Development macro variables & gdp\_pc, education enrollment, life\_expectancy\_country & Use as development proxies in robustness and interpretation & They describe human-capital and welfare context, not individual wealth production directly. \\
+Institution / cost environment & cpi\_country, cpi\_change\_country, tax\_revenue\_country\_country, total\_tax\_rate\_country & Use as contextual covariates only with missingness and collinearity warnings & These are repeated country-level attributes and may be time-misaligned with the billionaire snapshot. \\
+\bottomrule
+\end{tabular}

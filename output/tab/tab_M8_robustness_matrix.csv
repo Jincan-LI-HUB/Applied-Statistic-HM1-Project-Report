@@ -1,0 +1,8 @@
+claim,setting,metric,effect,ci_low,ci_high,n
+C1: logWorth--logGDP association,Overall (complete cases),Spearman rho,0.09657268201876247,0.05835101783876205,0.13418804862120018,2476
+C1: logWorth--logGDP association,Drop top 1% wealth,Spearman rho,0.08666714752943211,0.047037555047197685,0.12552819782702276,2451
+C1: logWorth--logGDP association,Self-made only,Spearman rho,0.09505739106738693,0.04694203205161233,0.1432715682182398,1721
+C1: logWorth--logGDP association,Not self-made only,Spearman rho,0.15064300235824077,0.08284553599815238,0.22125225786374647,755
+C2: selfMade difference in logWorth,Overall (complete cases),Cohen's d,-0.1189710612760027,-0.2056504698720693,-0.03283312491996447,2640
+C2: selfMade difference in logWorth,Drop top 1% wealth,Cohen's d,-0.12131623409131234,-0.2036333354592108,-0.03528818611341994,2613
+C3: concentration,Overall (complete cases),Top 1% share of total finalWorth,0.17980142215814138,,,2640

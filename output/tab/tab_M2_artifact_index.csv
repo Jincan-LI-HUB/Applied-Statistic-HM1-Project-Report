@@ -1,0 +1,9 @@
+module,type,name
+M2,table,tab_M2_missingness_top15
+M2,figure,fig_M2_missingness_top15
+M2,table,tab_M2_missingness_by_country_top12
+M2,figure,fig_M2_missingness_heatmap_country_top12
+M2,table,tab_M2_us_only_state_coverage
+M2,figure,fig_M2_us_only_state_coverage
+M2,figure,fig_M2_outliers_raw_vs_log_box
+M2,table,tab_M2_dq_issues_summary

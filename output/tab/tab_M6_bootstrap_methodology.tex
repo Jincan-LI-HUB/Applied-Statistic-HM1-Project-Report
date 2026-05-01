@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\caption{Bootstrap methodology: Percentile vs. BCa.}
+\label{tab:bootstrap}
+\begin{tabular}{lp{6cm}}
+\toprule
+Method & Description \\
+\midrule
+Percentile (used) & 2.5th and 97.5th percentiles of bootstrap distribution. Assumes the sampling distribution is symmetric. \\
+BCa (recommended) & Bias-corrected and accelerated: adjusts for median bias and skewness. More accurate for heavy-tailed distributions but requires jackknife re-estimation of the acceleration constant. \\
+\bottomrule
+\end{tabular}
+\bigskip
+\textit{Note: All CIs in this report use the percentile bootstrap with 10{,}000 replicates. Given the documented heavy-tailed distribution of billionaire wealth, BCa bootstrap would be methodologically preferable; the percentile CI may be slightly anti-conservative for extreme quantiles.}
+\end{table}

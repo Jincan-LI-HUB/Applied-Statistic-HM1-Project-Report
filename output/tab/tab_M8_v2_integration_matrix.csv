@@ -1,0 +1,10 @@
+dimension,earlier exploratory contribution,present location,evidence
+Raw-data freeze,"Hash, shape, schema, immutable raw file",Programmatic fingerprint and schema freeze,tab_M0_schema_freeze_A_summary; tab_M1_raw_fingerprint
+Record identity,personName not unique; composite snapshot key,Identity checks in notebook and main report,tab_M1_identity_audit
+Variable reasoning,Broad variable-layer discussion before modeling,Variable reasoning matrix with keep/derive/de-emphasize decisions,tab_M1_variable_reasoning_matrix
+Cleaning contract,"Raw immutable, cleaned derivatives, drop/keep rationale",Conservative cleaning log and dataset manifest,tab_M3_cleaning_log; tab_M3_clean_dataset_manifest
+Distributional analysis,Robust percentile and tail emphasis,"Heavy-tail, top-1%, Gini, BCa bootstrap, CCDF analysis",tab_M4_finalWorth_describe; tab_M4_gini_verification
+Geography and composition,"Country, US, China, category composition discussion",Country/category composition and bounded subnational views,tab_M4_top10_country_by_count; tab_M5_geo_us_state_profile
+Macro framing,Scale vs development vs institution distinction,Macro-variable interpretation and derived controls,tab_M1_variable_reasoning_matrix; regression section
+Regression and prediction,Scale/development model set and grouped CV,"HC3 OLS, nested F-test, VIF, 10-fold CV, quantile regression",tab_M7_regression_main; tab_M7_kfold_cv; tab_M7_vif
+Scope limits,Explicit attack points and boundaries,RQ summaries and limitation notes in the executed notebook,rendered executed notebook appendix

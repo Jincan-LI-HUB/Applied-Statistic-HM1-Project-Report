@@ -1,0 +1,3 @@
+check,result,evidence
+category_equals_industries,PASS,All rows identical after NA normalization
+state_present_only_for_US,PASS,Non-US records with state info: 0
