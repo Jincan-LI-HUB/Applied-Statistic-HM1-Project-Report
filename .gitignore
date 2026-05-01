@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+
+# LaTeX
+*.log
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Large files
+*.zip
+*.tar.gz
+
+# Minimax agent files
+.minimax/
+.sixth/
+.snapshots/
