@@ -18,9 +18,9 @@
 
 ## Last QA Results
 
-- `report.pdf`: 113 pages.
+- `report.pdf`: 115 pages.
 - `project_notebook.pdf`: 79 pages.
 - Executed notebook scan: 71 cells, 106 outputs, 28 image outputs, 0 scanned execution issues.
 - LaTeX log scan: no overfull boxes, underfull boxes, undefined references, undefined citations, fatal errors, or content-breaking warnings. The only remaining warning is the package-level `microtype` footnote patch warning.
 - HTML export warning: 28 images lack alt text. This is an nbconvert accessibility warning, not a code execution warning.
-- Visual spot check retained for the final Table 7 layout: `code/test/qa_report_table7_final.png`.
+- Visual spot checks were run after the course-knowledge enhancement for Table 7, the regression-assumption audit, and the methodological coverage section; temporary QA renders are not part of the submission package.

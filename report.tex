@@ -306,6 +306,8 @@ Table~\ref{tab:desc} reports the full distributional summary.
   \item On the log scale, the distribution becomes approximately symmetric: mean ($7.93$) and median ($7.74$) are close, and the standard deviation ($0.82$) is small relative to the mean.
 \end{itemize}
 
+\textbf{Course-statistics reading:} This is exactly the situation in which the arithmetic mean is the wrong first summary. In the descriptive-statistics framework, the sample mean is sensitive to outliers, whereas the median, interquartile range, and trimmed mean are designed to describe the central mass under skewness. The report therefore treats the raw mean as evidence of tail dominance, not as the representative fortune of a typical billionaire; subsequent comparisons use log wealth, ranks, medians, and bootstrap intervals to keep the upper tail from silently controlling every conclusion.
+
 Figure~\ref{fig:dist} shows the dual histogram. The raw-scale histogram is a near-monotone decreasing function dominated by the right tail; the log-scale histogram reveals the full bell-like structure of the bulk of billionaires.
 
 \begin{figure}[H]
@@ -509,6 +511,14 @@ Figure~\ref{fig:corrheat} displays the Spearman rank-correlation matrix for all 
 
 \textbf{The p-value problem in large samples:} With $n=2{,}640$, even a trivially small difference can achieve $p < 0.05$. To avoid ``p-value storytelling,'' inference is anchored on three quantities: (1) effect size (practical magnitude), (2) bootstrap confidence intervals (uncertainty quantification), and (3) a pre-specified threshold for practical significance. Effect sizes whose 95\% CIs include the practical-significance threshold are treated as inconclusive, regardless of $p$-value.
 
+\textbf{Hypothesis-testing frame:} The primary tests use two-sided null hypotheses of no association or no group difference:
+\[
+H_0:\theta=0,\qquad H_1:\theta\neq 0,
+\]
+where $\theta$ is a correlation, mean contrast, rank contrast, or industry effect size depending on the row of Table~\ref{tab:infer}. Rejecting $H_0$ controls Type I error only for the specified test; it does not by itself establish a practically important effect. Conversely, failing to reject $H_0$ is not proof of equality. This is why the report pairs each $p$-value with an effect size, a confidence interval, and multiple-testing correction.
+
+\textbf{Confidence-interval interpretation:} A 95\% confidence interval is interpreted in the repeated-sampling sense: under the stated procedure, intervals constructed over many comparable samples would cover the target parameter about 95\% of the time. It is not a statement that the fixed parameter has a 95\% probability of lying in the one interval observed here. Because the billionaire data are heavy-tailed and not plausibly bivariate normal, the correlation and effect-size intervals are bootstrap coverage approximations rather than normal-theory guarantees.
+
 \textbf{Definitions of primary metrics used throughout this section:}
 \begin{align}
 r &= \frac{\sum_i (x_i-\bar x)(y_i-\bar y)}{\sqrt{\sum_i (x_i-\bar x)^2}\,\sqrt{\sum_i (y_i-\bar y)^2}} \quad\text{(Pearson correlation)} \\[4pt]
@@ -536,6 +546,8 @@ Table~\ref{tab:infer} (rows 1--2) reports the primary correlations.
 \textbf{Multiple testing correction (Holm-Bonferroni \cite{holm1979}):} The primary inferential table reports 7 hypothesis tests. To control the family-wise error rate at $\alpha=0.05$, the Holm-Bonferroni procedure is applied. After correction, the tests that remain significant are: Spearman $\rho$ ($p=0.001 < 0.008$), Mann-Whitney Manufacturing ($p=0.032 < 0.010$), age slope ($p<0.001 < 0.013$), Kruskal-Wallis industry category ($p=0.001 < 0.017$), and the GDP Pearson $r$ ($p=0.006 < 0.025$). Pearson $r$, Mann-Whitney gender ($p=0.653$), Mann-Whitney selfMade ($p=0.033$), and Cohen's d selfMade ($p=0.033$) are no longer significant at $\alpha_{\text{Holm}} < 0.05$.
 
 \textbf{Pearson $r = 0.046$, 95\% CI $[0.007, 0.083]$:} A weak but statistically detectable positive linear association on the log scale. GDP per capita explains approximately $r^2 \approx 0.2\%$ of the variance in log-wealth---meaning 99.8\% of the variation is driven by other factors.
+
+\textbf{Why bootstrap rather than only Fisher's $z$:} The linear-regression course material motivates Fisher's $z$ interval for a population correlation under approximately bivariate Normal conditions. That approximation is not credible for billionaire wealth: even after logging, the joint distribution remains heavy-tailed and heterogeneous by industry and self-made status. The bootstrap CI is therefore used as the primary uncertainty summary, with Fisher's $z$ treated as a useful course benchmark rather than the governing model.
 
 \textbf{Spearman $\rho = 0.097$, 95\% CI $[0.058, 0.136]$:} The rank-based association is twice as large as the Pearson coefficient. This is expected in the presence of heavy tails: Pearson is attenuated by the extreme values pulling the least-squares line, while Spearman is immune to this because it operates on ranks.
 
@@ -751,6 +763,25 @@ Figure~\ref{fig:regdiag} shows residual diagnostics for Model B:
 \end{itemize}
 
 The Breusch--Pagan test ($BP = 4.58$, $p = 0.032$) \cite{white1980} detects statistically significant heteroskedasticity, justifying HC3 standard errors throughout.
+
+\begin{table}[H]
+\centering
+\caption{Course regression-assumption audit for the primary log-log model. The course assumptions are used as a diagnostic checklist, not as a claim that the observational data satisfy an ideal experiment.}
+\label{tab:course_reg_audit}
+\small
+\begin{tabularx}{\linewidth}{p{3.1cm}Y Y}
+\toprule
+Assumption & Evidence in this report & Treatment \\
+\midrule
+Linearity in parameters & Log-log scatter and fitted line show a weak approximately linear mean relation. & Interpret slope as elasticity; avoid causal language. \\
+Independent errors & Dataset is cross-sectional at the person level, but country and industry clustering may remain. & Acknowledge omitted clustering; treat inference as descriptive association. \\
+Zero mean conditional error & Cannot be verified directly because firm-level omitted variables are unavailable. & Emphasize unexplained variance and non-causal interpretation. \\
+Constant variance & Residual plot and Breusch--Pagan test indicate heteroskedasticity. & Use HC3 robust standard errors throughout. \\
+Normal errors & Q-Q plot shows heavier tails than Normal. & Use log outcome, bootstrap CIs, rank methods, and robust SE. \\
+Low multicollinearity & VIF table flags severe collinearity among macro variables. & Keep GDP elasticity interpretable; treat Model C as controlled association, not a stable prediction model. \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \begin{figure}[H]
 \centering
@@ -975,6 +1006,10 @@ Quantile regression is included as a sensitivity check; robust regression and ex
 
 \medskip
 
+\textbf{PCA and Bayesian extensions considered but not used as primary analyses.} Principal component analysis is relevant because the country-level macro variables are strongly collinear; a PCA score could compress GDP, CPI, education, life expectancy, and tax variables into a lower-dimensional development index. It is not used as the primary model because the research question asks for interpretable GDP elasticity, and replacing GDP with a component would make the main coefficient harder to explain. Bayesian inference is also a plausible future extension, especially a hierarchical country/industry model with partial pooling. The present dataset, however, contains one cross-sectional Forbes snapshot and no defensible external prior for individual fortunes, so a Bayesian model would add modeling assumptions without adding new observed information. Both methods are therefore noted as principled future work rather than forced into the main evidence chain.
+
+\medskip
+
 \textbf{Theoretical references.} The report uses the following sources to ground its inequality, growth, econometric, and bootstrap methods:
 \begin{itemize}
   \item Pareto, V. (1896). \textit{Cours d'Économie Politique} --- original Pareto law source.
@@ -1008,12 +1043,15 @@ Dimension & Element & Coverage & Rating \\
  & Multiple testing & Holm-Bonferroni applied to primary inferential family (7 tests) & \cellcolor{green!25} \\
  & Bootstrap method & BCa vs. percentile comparison documented; percentile retained with caveat & \cellcolor{yellow!25} \\
  & Spearman interpretation & Concordance interpretation requires bivariate normality & \cellcolor{yellow!25} \\
+ & Course testing frame & $H_0/H_1$, Type I error, CI coverage, and Fisher-$z$ limits stated explicitly & \cellcolor{green!25} \\
+ & Regression assumptions & Linearity, independence, zero-mean error, homoskedasticity, Normal error, and VIF audited & \cellcolor{green!25} \\
 \midrule
  & Unexplained variance & 95\% discussed systematically: 5 categories of omitted factors listed & \cellcolor{yellow!25} \\
  & Age non-linearity & LOWESS plot shows no strong non-linearity & \cellcolor{green!25} \\
  & Reference category & Diversified (n=182) stated as reference for Model C category dummies & \cellcolor{green!25} \\
  & Cross-validation & 10-fold CV; OOS $R^2\approx0.024$ indicates weak prediction & \cellcolor{green!25} \\
  & Alt. regression methods & Quantile regression implemented; robust regression remains future work & \cellcolor{yellow!25} \\
+ & PCA/Bayesian scope & Considered as course-relevant extensions, but excluded from the main chain to preserve interpretability & \cellcolor{yellow!25} \\
  & References & Pareto (1896), Cowell (2011), Wooldridge (2010), Efron (1993) & \cellcolor{green!25} \\
 \bottomrule
 \end{tabular}
